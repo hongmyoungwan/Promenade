@@ -1,0 +1,314 @@
+@CHARSET "UTF-8";
+
+.con_c {
+
+	margin-bottom: 25px;
+}
+
+.sub_menu{
+	width:78.38px;
+	background-color: white;
+}
+.sub_menu li{
+	 list-style-position:inside;
+    border: 1px ;
+    border-style: ridge;
+    text-align: center;
+	cursor:pointer;
+}
+
+.login_btn{
+	cursor:pointer;
+}
+.main_con{
+	position: absolute ;
+	
+}
+.sub_menu{
+	display:none;
+	position: absolute;
+	z-index:10000;
+}
+datalist {height:26px; line-height:26px; border:1px solid #bcbcbc; vertical-align:middle; outline:0; color:#696969;}
+
+div [id^=nav] {
+	position: absolute;
+}
+[id^=nav] {
+	position: absolute;
+	z-index:10000
+}
+
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+.mr40{margin-right:40px;}
+
+
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+.mb40{margin-bottom:40px;}
+
+.layerimg_select{position:relative; border:1px solid #d0d0d0; background:#e5e5e5; overflow:auto;}
+.layerimg_select .select_btn{position:absolute; top:50%; width:100%; height:28px; margin-top:-14px; text-align:center;}
+
+
+.goods_layout div.layerpop{top:60px; left:25%;}
+.goods_layout div.layerpop div.layerpop_container{width:800px;height: 800px;}
+.goods_layout div.layerpop div.layerimg_select{height: 450px;}
+.en_layout div.layerpop div.layerimg_select{height: 620px;}
+
+
+
+.btn,.btn span,.btn strong{ padding:0; margin:0; display:-moz-inline-stack; display:inline-block; *display:inline; zoom:1; white-space:nowrap; background-color:transparent; background-repeat:no-repeat; vertical-align:top; overflow:visible; text-align:center; cursor:pointer;}
+.btn{vertical-align:middle;}
+.btn span,.btn strong{}
+.btn:hover{ }
+.btn:hover span,.btn:hover strong{}
+
+.btn_d03{border:1px solid #e5e5e5; background-color:#fff;}
+
+
+.imgFile {
+		text-align: left;
+	cursor: pointer;
+	z-index: 2;
+	width: 67px;
+	position: relative;
+	opacity: 0;
+	
+	margin:auto;
+	filter: alpha(opacity : 0);
+}
+.ui-datepicker-trigger { position:relative;  width: 20px; height: 20px;  border-bottom-width: 10px;   margin-bottom: 15px;}
+
+/* button */
+.btn_b01,.btn_b01 span,.btn_b01 strong{font-size:14px; color:#fff;}
+.btn_b01{background-color:#fe6253;}
+.btn_b01 span,.btn_b01 strong{min-width:78px; height:38px; line-height:38px; padding:0 10px;  border-bottom:2px solid #fd4437;}
+
+.btn_b02,.btn_b02 span,.btn_b02 strong{font-size:14px; color:#fff;}
+.btn_b02{background-color:#cccccc;}
+.btn_b02 span,.btn_b02 strong{min-width:78px; height:38px; line-height:38px; padding:0 10px;  border-bottom:2px solid #bbbbbb;}
+
+.btn_bbox{margin-top:40px; text-align:center;}
+.btn_bbox02,.btn_mbox{width:100%; zoom:1;}
+.btn_bbox02:after,.btn_mbox:after{content:""; display:block; height:0; clear:both; visibility:hidden;}
+.btn_bbox02 .lbtn{float:left; padding-left:40px;}
+.btn_bbox02 .rbtn{float:right; padding-right:40px;}
+.btn_mbox .lbtn{float:left;}
+.btn_mbox .rbtn{float:right;}
+
+.btn_s01,.btn_s01 span,.btn_s01 strong{font-size:12px; color:#696969;}
+.btn_s01{background-color:#e5e5e5;}
+.btn_s01 span,.btn_s01 strong,.btn_s01_on span{min-width:30px; height:24px; line-height:24px; padding:0 0; }
+.btn_s01_on{background-color:#696969; color:#fff}
+
+
+
+.calendar_area{display:-moz-inline-stack;  *display:inline; zoom:1; height:30px; border:1px solid #bcbcbc;z-index:10;}
+.calendar_area.on{border:1px solid #1c2239;}
+.calendar_area input[type="text"]{*display:inline; line-height:40px; border:0 none; width:80px; padding-left:10px;z-index:90;}
+.calendar_area img{*display:inline; position: relative;top: 8px;z-index:90;}
+
+.calendar {width: 1200px}
+
+
+
+.setSearchDateBtn a{padding-top: 0}
+
+.btn_r{width:192px; height:45px;margin:0 5px; line-height:45px; text-align:center; background:#c20014; float: left; color: #fff; cursor: pointer;}
+.btn_g{ width:192px; height:45px; margin:0 5px; line-height:45px;text-align:center; background:#404040; float: left; color: #fff;cursor: pointer;}
+
+.inputbtn_w{height: 28px; padding:0 20px; background: #fff;}
+
+
+
+.btn_rg{width:404px; margin:0 auto; padding:50px 0; text-align: center;}
+.btn_rg a{font-weight:bold; color:#fff;}
+.btn_srg{width:360px; margin:0 auto; padding:30px 0 80px; text-align: center;}
+.btn_srg a{font-weight:bold; color:#fff;}
+#btn_sr{width:170px; height:40px;margin:0 5px; line-height:45px; text-align:center; background:#c20014; float: left; color: #fff; cursor: pointer;}
+#btn_sg{ width:170px; height:40px; margin:0 5px; line-height:45px;text-align:center; background:#404040; float: left; color: #fff;cursor: pointer;}
+
+.pointer{cursor: pointer;};
+
+
+/* margin padding */
+.mt5{margin-top:5px;}
+.mt7{margin-top:7px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt40{margin-top:40px;}
+.mt70{margin-top:70px;}
+.mt90{margin-top:90px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml30{margin-left:30px;}
+.ml40{margin-left:40px;}
+.ml50{margin-left:50px;}
+.ml70{margin-left:70px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+.mr40{margin-right:40px;}
+.mr50{margin-right:50px;}
+.mb20{margin-bottom:20px;}
+.mb40{margin-bottom:40px;}
+.mb5{margin-bottom:5px;}
+.ma{margin: 20px;}
+
+
+/* table */
+.lst_table01{}
+.lst_table01 table{width:100%;}
+.lst_table01 table thead th{height:24px; padding:10px 10px; background:#f7f7f7; color:#696969; font-weight:bold; text-align:center;}
+.lst_table01 table thead th span{font-weight:normal;}
+.lst_table01 table tbody td{height:34px; padding:3px 10px; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; color:#696969; text-align:center;}
+.lst_table01 table thead th.al,.lst_table01 table tbody td.al{text-align:left;}
+.lst_table01 table thead th.ar,.lst_table01 table tbody td.ar{text-align:right;}
+.lst_table01 table tbody td a{color:#696969;}
+.lst_table01 table tbody td img.link {position: relative;top: 1px;left: 5px;width: 10px;cursor: pointer;}
+.lst_table01.calendar{border-bottom:0 none;}
+.lst_table01.calendar table thead tr th{padding:5px 10px;}
+.lst_table01.calendar table tbody td{border:1px solid #e5e5e5;}
+.lst_table01.calendar table tbody td.on{background:#aae8ff;}
+
+
+#discount_rate{color:#fe5c4d; font-size:20px}
+.input_link_num{display: none;}
+.seller_url{display:none;}
+
+
+.datatables_01{width:1200px}
+.datatables_01 table{width:100%;}
+.datatables_01 table thead th{height:24px; padding:10px 10px; background:#f7f7f7; color:#696969; font-weight:bold; text-align:center;}
+.datatables_01 table thead th span{font-weight:normal;}
+.datatables_01 table tbody td{height:34px; padding:3px 10px; border-top:1px solid #e5e5e5; color:#696969; text-align:center;}
+.datatables_01 table thead th.al,.datatables_01 table tbody td.al{text-align:left;}
+.datatables_01 table thead th.ar,.datatables_01 table tbody td.ar{text-align:right;}
+.datatables_01 table tbody td a{color:#696969;}
+.datatables_01.calendar{border-bottom:0 none;}
+.datatables_01.calendar table thead tr th{padding:5px 10px;}
+.datatables_01.calendar table tbody td{border:1px solid #e5e5e5;}
+.datatables_01.calendar table tbody td.on{background:#aae8ff;}
+
+
+/* 정산관리 */
+.calendar_stit{padding-left:10px;}
+.calendar_box{position:relative; height:80px;}
+.calendar_box .cld_day{position:absolute; top:0; left:0;}
+.calendar_box .cld_price{display:block; padding-top:30px;}
+.calendar_box .cld_price.expected,.calendar_btxt .expected{color:#27bf39;}
+.calendar_box .cld_price.fix,.calendar_btxt .fix{color:#696969;}
+.calendar_btxt{padding-top:15px; text-align:right;}
+
+
+/* 정산 관리 달력 */
+span.btn_round_cal {
+  
+  padding: 6px 8px;
+  border: none;
+  letter-spacing: 2px;
+  outline: none;
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align:left;
+  float:left;
+  letter-spacing:-0.5px;
+}
+
+ span .btn_round_cal, .red_btn{background-color: #e06465;}
+ span .btn_round_cal, .blue_btn{background-color: #337099;}
+ span .btn_round_cal, .green_btn{background-color: #75bc75;}
+ 
+.btn_cal{
+	padding-bottom: 10px;
+}
+.cal_text{
+	font-size: 5px;
+	font-weight: bold;
+	letter-spacing:-1px;
+}
+
+/*
+  정산 관리 달력
+  화살표 말풍선
+*/
+.stmt_tt {
+	z-index:12;
+	position: relative;
+	width: 200px;
+	height: 100px;
+	padding: 0px;
+	color:white;
+	background: #4C4C4C ;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 3px;
+	top:70px;
+	font-size: 5px;
+	font-weight: bold;
+}
+
+.fc-event-container > div{
+	position: relative;
+}
+div .stmt_tt {
+	position: absolute;
+}
+.stmt_tt:after {
+	content: '';
+	position: absolute;
+	border-bottom: 15px solid #4C4C4C;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	height: 0;
+	width: 3px;
+	z-index: 1; 
+	top: -10px;
+	left: 40%;
+}
+.ui-datepicker-calendar tbody tr td{
+	height: 30px;
+}
+.ui-datepicker-next ui-corner-all span {
+	color:white;
+}
+
+
+#inputbtn_w{
+	cursor: pointer;
+}
+
+
+#goodsTable_paginate span a{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#goodsTable_paginate > a{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+.ptneval_formbox .downbtn{width: 192px; height: 45px; margin-top: 70px; background: #fff; font-weight: bold; border: 0; }
+
+
+
+
+
+

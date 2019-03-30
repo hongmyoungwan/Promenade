@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="contents">
+
+	<select id="selectContents" resultType="hashmap">
+		SELECT
+		tc.contents_no,
+		tc.contents_img,
+		tc.contents_name,
+		tc.price,
+		tc.s_price,
+		tc.s_fee,
+		tc.contents_img_detail1,
+		cmi.contents_status,
+		tc.contents_order_count
+		FROM
+		tb_contents tc
+		JOIN tb_contents_main_info cmi ON cmi.contents_no=tc.contents_no
+		JOIN tb_member_info mi ON tc.authority=mi.authority
+		WHERE
+		cmi.contents_status=1 AND
+		mi.authority=#{authority}
+		ORDER BY tc.contents_order_count DESC , tc.contents_no
+		LIMIT 0,8
+
+	</select>
+
+	<select id="selectRegDtContentsCount" resultType="int">
+
+		select count(*)
+		FROM(
+		select tc.contents_no
+		FROM tb_contents tc
+		JOIN tb_contents_main_info cmi ON
+		cmi.contents_no=tc.contents_no
+		JOIN tb_member_info mi ON
+		tc.authority=mi.authority
+		WHERE
+		cmi.contents_status=1 AND
+		mi.authority=#{authority}
+		)t
+
+	</select>
+
+	<select id="getAuthority" resultType="int">
+		select authority
+		from
+		tb_member_info
+		where
+		user_id=#{id}
+	</select>
+
+
+	<select id="loginCheck" resultType="int">
+		select count(0)
+		from
+		tb_member_info
+		where
+		user_id=#{id} and
+		password=#{pw}
+
+	</select>
+
+
+	<select id="selectRegDtContents" resultType="hashmap">
+		SELECT
+		tc.contents_no,
+		tc.contents_img,
+		tc.contents_name,
+		tc.price,
+		tc.s_price,
+		tc.s_fee,
+		tc.contents_img_detail1,
+		cmi.contents_status,
+		tc.contents_order_count
+		FROM
+		tb_contents tc
+		JOIN tb_contents_main_info cmi ON cmi.contents_no=tc.contents_no
+		JOIN tb_member_info mi ON tc.authority=mi.authority
+		WHERE
+		cmi.contents_status=1 AND
+		mi.authority=#{authority}
+		ORDER BY cmi.reg_dt DESC, tc.contents_no
+		LIMIT ${start}, ${end}
+
+	</select>
+	<select id="getContentsDetail" resultType="hashmap">
+		SELECT
+		tc.contents_no,
+		tc.contents_img,
+		tc.contents_name,
+		tc.price,
+		tc.s_price,
+		tc.s_fee,
+		cmi.contents_status,
+		tc.contents_order_count,
+		tc.contents_order_count,
+		tc.contents_img_detail1,
+		tc.contents_img_detail2,
+		tc.contents_img_detail3,
+		tc.contents_img_detail4,
+		tc.contents_img_detail5
+		FROM
+		tb_contents tc
+		JOIN tb_contents_main_info cmi ON cmi.contents_no=tc.contents_no
+		WHERE
+		cmi.contents_status=1 AND
+		tc.contents_no=#{value}
+
+
+	</select>
+
+	<select id="selectGetGroupCategory" resultType="hashmap">
+		SELECT
+		group_category_nm,
+		group_category_cd
+		FROM
+		tb_contents_goods_category
+		GROUP BY group_category_cd
+	</select>
+	<select id="selectCategory" resultType="hashmap">
+
+		SELECT
+		category_nm,
+		category_cd
+		FROM
+		tb_contents_goods_category
+		WHERE
+		group_category_cd=#{group_category_cd}
+		GROUP BY category_cd
+
+	</select>
+	<select id="selectSubCategory" resultType="hashmap">
+		SELECT
+		sub_category_nm,
+		sub_category_cd
+		FROM
+		tb_contents_goods_category
+		WHERE
+		category_cd=#{category_cd}
+		GROUP BY sub_category_cd
+
+
+
+	</select>
+
+
+	<select id="getGosidData" resultType="hashmap">
+		SELECT
+		goods_anmt_cd,
+		goods_anmt_title,
+		sort_no
+		FROM
+		tb_contents_goods_anmt_code
+		WHERE
+		category_cd=#{category_cd}
+		ORDER BY sort_no
+
+
+	</select>
+
+	<insert id="insertContentsItem" >
+		INSERT INTO tb_contents(
+		contents_order_count,
+		contents_name,
+		price,
+		contents_img,
+		contents_img_detail1,
+		contents_img_detail2,
+		contents_img_detail3,
+		contents_img_detail4,
+		contents_img_detail5,
+		s_price,
+		s_fee,
+		authority,
+		sub_category_cd,
+		contentsInfo,
+		hiddenFileName)
+		VALUSE(
+		'1',
+		#{contentsNm},
+		#{sellAmt},
+		#{goodsImg1},
+		#{goodsDetailImg1},
+		#{goodsDetailImg2},
+		#{goodsDetailImg3},
+		#{goodsDetailImg4},
+		#{goodsDetailImg5},
+		#{goods_amt},
+		#{s_fee},
+		#{authority},
+		#{subCategory},
+		#{contentsInfo},
+		#{hiddenFileName}
+		)
+
+	</insert>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>
