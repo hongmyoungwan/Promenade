@@ -27,15 +27,12 @@
 				<ul>
 				
 				</ul>
-				<div style="width:1000px;">
-					<a id="subBtn" onclick="javascript:subIdCreate()"><input type="button" name="" id="btn_r" value="+ 서브아이디 등록" style="width:160px; margin-bottom:20px; float: right;"></a>
-				</div>
 			</div>
 			
 			<!-- lst_table01 -->
 		<section id="content">
 			<div class="lst_table01 mt10">
-			    <table id="subAdminTable"border="1" summary="상품조회 및 수정에 대한 내용입니다">
+			    <table id="subAdminTable" border="1" summary="회사 소개 ">
 			        <caption></caption>
 			        <colgroup>
 			            <col style="width:15%;">
@@ -44,13 +41,17 @@
 			        </colgroup>
 			        <thead>
 			        <tr>
-			            <th scope="col">발급일자</th>
-			            <th scope="col">서브아이디</th>
-			            <th scope="col">메뉴권한</th>
+			            <th scope="col">상품담당자</th>
+			            <th scope="col">발주 및 CS</th>
+			            <th scope="col">정산</th>
 			        </tr>
 			        </thead>
 			        <tbody>
-			      
+			        	<tr>
+				      		<td>오세원 대표 / 010-3475-0813</td>
+				      		<td>강현우 팀장 / 010-2985-4986</td>
+				      		<td>강현우 팀장 / 010-2985-4986</td>
+			      		</tr>
 			        </tbody>
 			    </table>
 			</div>
