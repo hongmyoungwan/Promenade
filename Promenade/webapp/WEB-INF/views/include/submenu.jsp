@@ -80,7 +80,7 @@ footer a:link {
 	<div class="container-fluid" style="width: 100%;">
 
 		<ul class="nav navbar-nav">
-			<li><a href="/comp">회사소개</a></li>
+			<li><a href="/companyIntro">회사소개</a></li>
 			<li><a href="javascript:search(1,'0')">전체상품</a></li>
 			<li><a href="javascript:search(1,'01')">아이디어</a></li>
 			<li><a href="javascript:search(1,'02')">생활</a></li>

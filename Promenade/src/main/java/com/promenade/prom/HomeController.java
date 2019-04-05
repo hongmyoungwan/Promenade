@@ -65,7 +65,7 @@ public class HomeController {
 		
 		}else {
 			map.put("resultCd", "400");
-			map.put("loginCheck", "¾ÆÀÌµð¿Í ºñ¹Ð¹øÈ£¸¦ È®ÀÎÇØ ÁÖ¼¼¿ä");
+			map.put("loginCheck", "ï¿½ï¿½ï¿½Ìµï¿½ï¿½ ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½");
 			
 		}
 		
@@ -173,7 +173,7 @@ public class HomeController {
 		
 		service.insertUser(re);
 		 map.put("resultCd", "200");
-		 map.put("resultMsg", "µî·Ï¿¡ ¼º°øÇÏ¿´½À´Ï´Ù.");
+		 map.put("resultMsg", "ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		return map;
 	}
 	
@@ -194,5 +194,21 @@ public class HomeController {
 		}else{
 			return request.getParameter(name).trim();
 		}
+	}
+	
+	/**
+	 * íšŒì‚¬ ì†Œê°œ í™”ë©´
+	 * @param HttpServletRequest 
+	 * @return ModelAndView 
+	 * @throws Exception
+	 * 
+	 */
+	@RequestMapping(value = "/companyIntro", method = RequestMethod.GET)
+	public ModelAndView companyIntro(HttpServletRequest request) throws Exception {
+		ModelAndView mav= new ModelAndView();
+		
+		
+		mav.setViewName("/companyIntro");
+		return mav;
 	}
 }
