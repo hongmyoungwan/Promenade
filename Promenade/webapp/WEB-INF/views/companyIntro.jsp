@@ -15,7 +15,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <script type="text/javascript" src="/resources/js/common.js"></script>
-<script type="text/javascript" src="/resources/js/createID.js"></script>
+<script type="text/javascript" src="/resources/js/companyIntro.js"></script>
 <script type="text/javascript" src="/resources/jquery.dataTables.js"></script>
 <body>
 <div class="title_box">
@@ -25,38 +25,54 @@
 			<!--title box  -->
 			<div class="tip_box" style="border: 0; height:150px;  margin-top: 50px;">
 				<ul>
-				
+					<li>
+						<h3>회사 소개</h3>
+					</li>
 				</ul>
 			</div>
 			
 			<!-- lst_table01 -->
-		<section id="content">
-			<div class="lst_table01 mt10">
-			    <table id="subAdminTable" border="1" summary="회사 소개 ">
-			        <caption></caption>
-			        <colgroup>
-			            <col style="width:15%;">
-			            <col style="width:auto;">
-			            <col style="width:15%;">
-			        </colgroup>
-			        <thead>
+			<section id="content">
+			    <table class="table" summary="회사 소개 ">
 			        <tr>
-			            <th scope="col">상품담당자</th>
-			            <th scope="col">발주 및 CS</th>
-			            <th scope="col">정산</th>
+			            <th>상품담당자</th>
+			            <td>오세원 대표 / 010-3475-0813</td>
 			        </tr>
-			        </thead>
-			        <tbody>
-			        	<tr>
-				      		<td>오세원 대표 / 010-3475-0813</td>
-				      		<td>강현우 팀장 / 010-2985-4986</td>
-				      		<td>강현우 팀장 / 010-2985-4986</td>
-			      		</tr>
-			        </tbody>
+		        	<tr>
+			      		<th>발주 및 CS</th>
+			      		<td>강현우 팀장 / 010-2985-4986</td>
+		      		</tr>
+		      		
+		      		<tr>
+			      		<th>정산</th>
+			      		<td>강현우 팀장 / 010-2985-4986</td>
+		      		</tr>
 			    </table>
-			</div>
+			
 			</section>
 			<!-- //lst_table01 -->
 			
+		<!-- copyright -->
+		<footer	style="background-color: #949596;">
+			<div class="footer-copyright" align="center">
+				<div class="container-fluid">
+					<div id="ft_wr">
+						<div id="ft_link">
+							<a href="/" class="bt_home"> HOME</a>
+						</div>
+						<div id="ft_catch">
+							<p>법인명(상호) : 주식회사 아이마마 대표자(성명) : 이강로 사업자등록번호 : 426-81-00782</p>
+							<p>전화번호 : 1577-0160 이메일 : lkn2110@naver.com 주소 : 경기도 고양시 덕양구
+								읍내로 15번길 프라자리치 4층</p>
+						</div>
+						<div id="ft_copy">
+							Copyright © <b>imama-kakao.com.</b> All rights reserved.
+						</div>
+					</div>
+	
+				</div>
+			</div>
+			<!--/.Copyright-->
+		</footer>
 </body>
 </html>
